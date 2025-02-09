@@ -4,54 +4,61 @@ import re
 import sys
 import os
 
-# A helper function that checks if a string contains any Arabic characters.
 def contains_arabic(text):
     # Unicode block for Arabic: \u0600 to \u06FF
     return bool(re.search(r'[\u0600-\u06FF]', text))
 
 def main():
-    # Ensure an input file was provided.
+    # Check if the input file name is provided.
     if len(sys.argv) < 2:
         print("Usage: python script.py <input_file.txt>")
         sys.exit(1)
         
     input_filename = sys.argv[1]
-    
-    # Derive an output filename (e.g. input.txt -> input.json)
     base, _ = os.path.splitext(input_filename)
     output_filename = base + ".json"
     
-    # Using the sample timestamp; you could also generate the current UTC timestamp.
+    # Using a fixed timestamp; adjust as needed.
     timestamp = "2025-02-05T22:14:11.248Z"
     
-    # Set up the metadata according to the specification.
     metadata = {
-        "scriptName": "crying by the sea",
-        "originalCreator": "Monia",
+        "scriptName": "roaming-around",
+        "originalCreator": "user",
         "coAuthors": [],
         "dateCreated": timestamp,
         "lastUpdated": timestamp
     }
     
-    # Process the input file line by line.
+    # List of keywords to identify dialogue lines.
+    dialogue_keywords = ["spect-actor:", "tilskuer:", "المتفرج:"]
+    
     script_lines = {}
     with open(input_filename, "r", encoding="utf-8") as f:
-        # Enumerate starting at 1 to match line numbering.
         for i, line in enumerate(f, start=1):
-            # Remove any leading/trailing whitespace.
             line = line.strip()
             if not line:
-                # Skip blank lines.
                 continue
             
-            # Determine alignment: right if the text contains Arabic characters.
+            # Check if the line is dialogue and wrap the keyword with stars.
+            is_dialogue = False
+            for keyword in dialogue_keywords:
+                # Check case-insensitively for English keywords.
+                if line.lower().startswith(keyword.lower()):
+                    is_dialogue = True
+                    keyword_length = len(keyword)
+                    # Insert two asterisks before and after the dialogue keyword.
+                    line = f"**{line[:keyword_length]}**{line[keyword_length:]}"
+                    break
+            
+            # Set alignment: right if the line contains Arabic characters.
             alignment = "right" if contains_arabic(line) else "left"
             
-            # Each line gets an entry keyed by its line number as a string.
+            # Create the JSON entry for this line.
             script_lines[str(i)] = {
                 "text": line,
                 "alignment": alignment,
                 "style": "regular",
+                "dialogue": is_dialogue,
                 "createdAt": timestamp,
                 "editedAt": timestamp
             }
@@ -62,7 +69,7 @@ def main():
         "script": script_lines
     }
     
-    # Write the JSON to the output file with proper formatting.
+    # Write out the JSON file.
     with open(output_filename, "w", encoding="utf-8") as outfile:
         json.dump(output_data, outfile, ensure_ascii=False, indent=2)
     
