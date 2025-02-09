@@ -1,0 +1,872 @@
+{
+  "metadata": {
+    "scriptName": "crying by the sea",
+    "originalCreator": "Monia",
+    "coAuthors": [],
+    "dateCreated": "2025-02-05T22:14:11.248Z",
+    "lastUpdated": "2025-02-05T22:14:11.248Z"
+  },
+  "script": {
+    "1": {
+      "text": "spect-actor: I will break my back for you",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "2": {
+      "text": "spect-actor: said the factory worker to his daugher",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "3": {
+      "text": "spect-actor: and the daughter replied",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "4": {
+      "text": "spect-actor: I will break the rules for you",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "6": {
+      "text": "المتفرج: سيداتي وسادتي، مساء الخير. مرحبًا بكم على متن الطائرة اللامرئيّة",
+      "alignment": "right",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "7": {
+      "text": "المتفرج: أنا الكابتن الذي يسافر بك حول العالم وانت من تختار وجهتك",
+      "alignment": "right",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "8": {
+      "text": "المتفرج: وأملك بعض المعلومات عن رحلتنا. سيكون موعد رحلتنا ابتداءً من اليوم",
+      "alignment": "right",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "9": {
+      "text": "المتفرج: ووقت وصولنا المقدر إلى وجهتك تختاره بنفسك",
+      "alignment": "right",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "10": {
+      "text": "tilskuer: en halv sætning",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "11": {
+      "text": "tilskuer: en verden",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "12": {
+      "text": "tilskuer: skåret i stykker",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "13": {
+      "text": "tilskuer: af grænser",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "14": {
+      "text": "tilskuer: færdiggør denne sætning",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "15": {
+      "text": "tilskuer: jeg krydser en grænse og",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "16": {
+      "text": "يتنفس المتفرجون بعمق",
+      "alignment": "right",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "17": {
+      "text": "وفي كل زفير تأتي نغمة",
+      "alignment": "right",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "18": {
+      "text": "يدندن الجمهور",
+      "alignment": "right",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "19": {
+      "text": "عالية أو منخفضة كما يريدون",
+      "alignment": "right",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "20": {
+      "text": "للمدة التي يريدونها",
+      "alignment": "right",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "21": {
+      "text": "دقات الموجة الصاخبة التي تهدأ ببطء",
+      "alignment": "right",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "22": {
+      "text": "tilskuerne trækker vejret dybt",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "23": {
+      "text": "på hver udånding kommer en tone",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "24": {
+      "text": "tilskuerne nynner",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "25": {
+      "text": "så højt eller lavt de vil",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "26": {
+      "text": "så længe de vil",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "27": {
+      "text": "høje bølgeslag, der langsomt stilner af",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "29": {
+      "text": "tilskuer: du krydser en grænse",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "30": {
+      "text": "tilskuer: for at arbejde",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "31": {
+      "text": "tilskuer: på Europas fabrikker",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "32": {
+      "text": "tilskuer: du forlader dine forældre",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "33": {
+      "text": "tilskuer: du forlader dine søskende",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "34": {
+      "text": "tilskuer: du forlader dine onkler og tanter",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "35": {
+      "text": "tilskuer: du forlader din elskede",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "36": {
+      "text": "tilskuer: du forlader dine børn",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "37": {
+      "text": "tilskuer: du forlader dine venner",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "38": {
+      "text": "tilskuer: du forlader træerne",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "39": {
+      "text": "tilskuer: du forlader dyrene",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "40": {
+      "text": "tilskuer: du forlader jorden",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "41": {
+      "text": "tilskuer: du forlader mig",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "42": {
+      "text": "tilskuer: aldrig",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "43": {
+      "text": "tilskuer: jeg forlod",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "44": {
+      "text": "tilskuer: dig",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "45": {
+      "text": "tilskuer: for at studere på Europas universiteter",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "46": {
+      "text": "tilskuer: hver dag den samme film",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "47": {
+      "text": "tilskuer: som at sidde fast i en drøm",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "48": {
+      "text": "tilskuer: du krydser en grænse og",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "49": {
+      "text": "tilskuer: ankommer",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "50": {
+      "text": "tilskuer: til et nyt land",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "51": {
+      "text": "tilskuer: omskriv manuskriptet",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "52": {
+      "text": "tilskuer: du krydser en grænse og",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "53": {
+      "text": "tilskuer: forsvinder",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "54": {
+      "text": "يتنفس المتفرجون بعمق",
+      "alignment": "right",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "55": {
+      "text": "وفي كل زفير تأتي نغمة",
+      "alignment": "right",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "56": {
+      "text": "يدندن الجمهور",
+      "alignment": "right",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "57": {
+      "text": "عالية أو منخفضة كما يريدون",
+      "alignment": "right",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "58": {
+      "text": "للمدة التي يريدونها",
+      "alignment": "right",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "59": {
+      "text": "دقات الموجة الصاخبة التي تهدأ ببطء",
+      "alignment": "right",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "60": {
+      "text": "tilskuerne trækker vejret dybt",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "61": {
+      "text": "på hver udånding kommer en tone",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "62": {
+      "text": "tilskuerne nynner",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "63": {
+      "text": "så højt eller lavt de vil",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "64": {
+      "text": "så længe de vil",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "65": {
+      "text": "høje bølgeslag, der langsomt stilner af",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "67": {
+      "text": "tilskuer: hvad er mit land?",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "68": {
+      "text": "tilskuer: hvad er dit land?",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "69": {
+      "text": "spect-actor: I",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "70": {
+      "text": "spect-actor: am a fragment",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "71": {
+      "text": "spect-actor: of a we",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "72": {
+      "text": "tilskuer: jorden",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "73": {
+      "text": "tilskuer: forlader dig",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "74": {
+      "text": "tilskuer: aldrig",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "75": {
+      "text": "tilskuer: jorden",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "76": {
+      "text": "tilskuer: dit ophav",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "77": {
+      "text": "tilskuer: jorden",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "78": {
+      "text": "tilskuer: dit gravsted",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "79": {
+      "text": "tilskuer: jorden",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "80": {
+      "text": "tilskuer: et sted hvor nyt liv kan vokse",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "81": {
+      "text": "يتنفس المتفرجون بعمق",
+      "alignment": "right",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "82": {
+      "text": "وفي كل زفير تأتي نغمة",
+      "alignment": "right",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "83": {
+      "text": "يدندن الجمهور",
+      "alignment": "right",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "84": {
+      "text": "عالية أو منخفضة كما يريدون",
+      "alignment": "right",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "85": {
+      "text": "للمدة التي يريدونها",
+      "alignment": "right",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "86": {
+      "text": "دقات الموجة الصاخبة التي تهدأ ببطء",
+      "alignment": "right",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "87": {
+      "text": "tilskuerne trækker vejret dybt",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "88": {
+      "text": "på hver udånding kommer en tone",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "89": {
+      "text": "tilskuerne nynner",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "90": {
+      "text": "så højt eller lavt de vil",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "91": {
+      "text": "så længe de vil",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "92": {
+      "text": "høje bølgeslag, der langsomt stilner af",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "94": {
+      "text": "tilskuer: jeg håber tristheden vil forlade dig",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "95": {
+      "text": "tilskuer: som en sky",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "96": {
+      "text": "tilskuer: der opløses til regn",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "97": {
+      "text": "tilskuer: strømmer ned ad bjergsider",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "98": {
+      "text": "tilskuer: samles i floder",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "99": {
+      "text": "tilskuer: der løber",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "100": {
+      "text": "tilskuer: gennem deltaer",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "101": {
+      "text": "tilskuer: ud i havet",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "102": {
+      "text": "tilskuer: hvorfra den fordamper tilbage op i luften",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "103": {
+      "text": "tilskuer: og bliver til skyer",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "104": {
+      "text": "tilskuer: der dækker for solen",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "105": {
+      "text": "tilskuer: sådan har du fortalt mig om vandets bevægelser",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "106": {
+      "text": "tilskuer: hvordan vandet cirkulerer mellem havet",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "107": {
+      "text": "tilskuer: himlen",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "108": {
+      "text": "tilskuer: og bjerget",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "109": {
+      "text": "tilskuer: hvad med tårerne?",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "110": {
+      "text": "tilskuer: hvad med",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "111": {
+      "text": "tilskuer: havet",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "112": {
+      "text": "tilskuer: i",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "113": {
+      "text": "tilskuer: os?",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "114": {
+      "text": "tilskuer: tiden går",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "115": {
+      "text": "tilskuer: løber ud i havet",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "116": {
+      "text": "يتنفس المتفرجون بعمق",
+      "alignment": "right",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "117": {
+      "text": "وفي كل زفير تأتي نغمة",
+      "alignment": "right",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "118": {
+      "text": "يدندن الجمهور",
+      "alignment": "right",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "119": {
+      "text": "عالية أو منخفضة كما يريدون",
+      "alignment": "right",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "120": {
+      "text": "للمدة التي يريدونها",
+      "alignment": "right",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "121": {
+      "text": "دقات الموجة الصاخبة التي تهدأ ببطء",
+      "alignment": "right",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "122": {
+      "text": "tilskuerne trækker vejret dybt",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "123": {
+      "text": "på hver udånding kommer en tone",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "124": {
+      "text": "tilskuerne nynner",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "125": {
+      "text": "så højt eller lavt de vil",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "126": {
+      "text": "så længe de vil",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    },
+    "127": {
+      "text": "høje bølgeslag, der langsomt stilner af",
+      "alignment": "left",
+      "style": "regular",
+      "createdAt": "2025-02-05T22:14:11.248Z",
+      "editedAt": "2025-02-05T22:14:11.248Z"
+    }
+  }
+}

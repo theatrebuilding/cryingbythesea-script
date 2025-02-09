@@ -1,0 +1,45 @@
+.App {
+  text-align: left;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: black;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.scroll-container {
+
+  position: relative;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+@media (max-width: 600px) {
+  .scroll-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.scrolling-script {
+  display: flex;
+  flex-direction: column;
+  animation: scrollUp 10s linear infinite;
+  width: 100%;
+}
+
+.script-line {
+  padding: 10px 0;
+  font-size: 18px;
+}
+
+
+@keyframes scrollUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
