@@ -6,26 +6,26 @@ function App() {
   const scriptRef = useRef(null);
 
   // Helper function to parse text for star formatting.
-  // - ***text*** → bold+italic (<strong><em>text</em></strong>)
-  // - **text**   → bold (<strong>text</strong>)
-  // - *text*     → italic (<em>text</em>)
+  // ***text***  → <strong><em>text</em></strong>
+  // **text**    → <strong>text</strong>
+  // *text*      → <em>text</em>
   const parseFormattedText = (text) => {
     // This regex matches triple, double, or single star markers.
-    // Group 2 captures content inside ***...***,
-    // Group 3 captures content inside **...**,
-    // Group 4 captures content inside *...*.
+    // Group 2: content inside ***...***
+    // Group 3: content inside **...**
+    // Group 4: content inside *...*
     const regex = /(\*\*\*([^*]+)\*\*\*|\*\*([^*]+)\*\*|\*([^*]+)\*)/g;
     const result = [];
     let lastIndex = 0;
     let match;
     let counter = 0;
     while ((match = regex.exec(text)) !== null) {
-      // Push any text that comes before the current match.
+      // Add text before the match.
       if (match.index > lastIndex) {
         result.push(text.slice(lastIndex, match.index));
       }
       if (match[2]) {
-        // Triple stars: bold and italic.
+        // Triple stars: bold + italic.
         result.push(
           <strong key={counter}>
             <em>{match[2]}</em>
@@ -41,20 +41,19 @@ function App() {
       counter++;
       lastIndex = regex.lastIndex;
     }
-    // Append any remaining text after the last match.
+    // Add remaining text after the last match.
     if (lastIndex < text.length) {
       result.push(text.slice(lastIndex));
     }
     return result;
   };
 
-  // Fetch the script from the JSON file.
+  // Fetch the script JSON.
   useEffect(() => {
     fetch('/script.json')
       .then((response) => response.json())
       .then((data) => {
-        // Convert the "script" object (with line numbers as keys)
-        // into a sorted array of script lines.
+        // Convert the "script" object (with numeric keys) into a sorted array.
         const lines = Object.keys(data.script)
           .sort((a, b) => Number(a) - Number(b))
           .map((key) => data.script[key]);
@@ -63,14 +62,13 @@ function App() {
       .catch((error) => console.error('Error fetching script:', error));
   }, []);
 
-  // Calculate the initial scroll offset based on GMT time.
+  // Set the initial scroll offset based on GMT time.
   useEffect(() => {
     if (!scriptRef.current || script.length === 0) return;
-
     const container = scriptRef.current;
-    // Duplicate the script to allow seamless scrolling; we use half the total height.
+    // Duplicate content for seamless scrolling.
     const totalScrollHeight = container.scrollHeight / 2;
-    const SCROLL_SPEED = 10; // pixels per second (adjust if needed)
+    const SCROLL_SPEED = 10; // pixels per second; adjust as needed.
     const duration = totalScrollHeight / SCROLL_SPEED;
 
     const now = new Date();
@@ -85,13 +83,11 @@ function App() {
     container.scrollTop = scrollPosition;
   }, [script]);
 
-  // Handle scrolling to ensure a seamless wrap-around.
+  // Handle scrolling to achieve a seamless wrap-around.
   const handleScroll = () => {
     const container = scriptRef.current;
     if (!container) return;
-
     const halfHeight = container.scrollHeight / 2;
-
     if (container.scrollTop >= halfHeight) {
       container.scrollTop -= halfHeight;
     } else if (container.scrollTop < 0) {
@@ -107,24 +103,28 @@ function App() {
         style={{ height: '100%', overflowY: 'scroll' }}
         onScroll={handleScroll}
       >
-        {/* Render the original script lines */}
+        {/* Render original script lines */}
         {script.map((lineObj, index) => (
           <div
             key={index}
             className="script-line"
             style={{ textAlign: lineObj.alignment }}
           >
-            {parseFormattedText(lineObj.text)}
+            {lineObj.dialogue
+              ? parseFormattedText(lineObj.text)
+              : <em>{parseFormattedText(lineObj.text)}</em>}
           </div>
         ))}
-        {/* Duplicate the script lines for seamless scrolling */}
+        {/* Duplicate script lines for seamless scrolling */}
         {script.map((lineObj, index) => (
           <div
             key={`repeat-${index}`}
             className="script-line"
             style={{ textAlign: lineObj.alignment }}
           >
-            {parseFormattedText(lineObj.text)}
+            {lineObj.dialogue
+              ? parseFormattedText(lineObj.text)
+              : <em>{parseFormattedText(lineObj.text)}</em>}
           </div>
         ))}
       </div>
