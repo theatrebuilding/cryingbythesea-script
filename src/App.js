@@ -6,7 +6,7 @@ function App() {
   const scriptRef = useRef(null);
 
   useEffect(() => {
-    fetch('https://raw.githubusercontent.com/jazbogross/script-more-script-1741035226125/main/script.json')
+    fetch('https://raw.githubusercontent.com/htmonial/script-a-sea-of-pixels-1741723679263/refs/heads/main/script.json')
       .then((response) => response.json())
       .then((data) => setScript(data.ops))
       .catch((error) => console.error('Error fetching script:', error));
