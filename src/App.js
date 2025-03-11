@@ -5,85 +5,27 @@ function App() {
   const [script, setScript] = useState([]);
   const scriptRef = useRef(null);
 
-  // Helper function to parse text for star formatting.
-  // ***text***  → <strong><em>text</em></strong>
-  // **text**    → <strong>text</strong>
-  // *text*      → <em>text</em>
-  const parseFormattedText = (text) => {
-    // This regex matches triple, double, or single star markers.
-    // Group 2: content inside ***...***
-    // Group 3: content inside **...**
-    // Group 4: content inside *...*
-    const regex = /(\*\*\*([^*]+)\*\*\*|\*\*([^*]+)\*\*|\*([^*]+)\*)/g;
-    const result = [];
-    let lastIndex = 0;
-    let match;
-    let counter = 0;
-    while ((match = regex.exec(text)) !== null) {
-      // Add text before the match.
-      if (match.index > lastIndex) {
-        result.push(text.slice(lastIndex, match.index));
-      }
-      if (match[2]) {
-        // Triple stars: bold + italic.
-        result.push(
-          <strong key={counter}>
-            <em>{match[2]}</em>
-          </strong>
-        );
-      } else if (match[3]) {
-        // Double stars: bold.
-        result.push(<strong key={counter}>{match[3]}</strong>);
-      } else if (match[4]) {
-        // Single star: italic.
-        result.push(<em key={counter}>{match[4]}</em>);
-      }
-      counter++;
-      lastIndex = regex.lastIndex;
-    }
-    // Add remaining text after the last match.
-    if (lastIndex < text.length) {
-      result.push(text.slice(lastIndex));
-    }
-    return result;
-  };
-
-  // Fetch the script JSON.
   useEffect(() => {
-    fetch('/script.json')
+    fetch('https://raw.githubusercontent.com/jazbogross/script-more-script-1741035226125/main/script.json')
       .then((response) => response.json())
-      .then((data) => {
-        // Convert the "script" object (with numeric keys) into a sorted array.
-        const lines = Object.keys(data.script)
-          .sort((a, b) => Number(a) - Number(b))
-          .map((key) => data.script[key]);
-        setScript(lines);
-      })
+      .then((data) => setScript(data.ops))
       .catch((error) => console.error('Error fetching script:', error));
   }, []);
 
-  // Set the initial scroll offset based on GMT time.
   useEffect(() => {
     if (!scriptRef.current || script.length === 0) return;
     const container = scriptRef.current;
-    // Duplicate content for seamless scrolling.
     const totalScrollHeight = container.scrollHeight / 2;
-    const SCROLL_SPEED = 10; // pixels per second; adjust as needed.
+    const SCROLL_SPEED = 10;
     const duration = totalScrollHeight / SCROLL_SPEED;
 
     const now = new Date();
-    const gmtTimeInSeconds =
-      now.getUTCHours() * 3600 +
-      now.getUTCMinutes() * 60 +
-      now.getUTCSeconds();
-
-    const scrollPosition =
-      ((gmtTimeInSeconds % duration) / duration) * totalScrollHeight;
+    const gmtTimeInSeconds = now.getUTCHours() * 3600 + now.getUTCMinutes() * 60 + now.getUTCSeconds();
+    const scrollPosition = ((gmtTimeInSeconds % duration) / duration) * totalScrollHeight;
 
     container.scrollTop = scrollPosition;
   }, [script]);
 
-  // Handle scrolling to achieve a seamless wrap-around.
   const handleScroll = () => {
     const container = scriptRef.current;
     if (!container) return;
@@ -95,6 +37,42 @@ function App() {
     }
   };
 
+  const renderScript = (ops) => {
+    const lines = [];
+    let currentLine = [];
+
+    ops.forEach((op) => {
+      const segments = op.insert.split(/(\n)/);
+
+      segments.forEach((segment) => {
+        if (segment === '\n') {
+          lines.push({ segments: currentLine, alignment: op.attributes?.align || 'left' });
+          currentLine = [];
+        } else if (segment) {
+          currentLine.push({ insert: segment, attributes: op.attributes });
+        }
+      });
+    });
+
+    if (currentLine.length) lines.push({ segments: currentLine, alignment: 'left' });
+
+    return lines.map((line, lineIndex) => (
+      <div key={lineIndex} className="script-line" style={{ textAlign: line.alignment }}>
+        {line.segments.map((seg, segIndex) => {
+          let content = seg.insert;
+          if (seg.attributes?.bold && seg.attributes?.italic) {
+            content = <strong key={segIndex}><em>{content}</em></strong>;
+          } else if (seg.attributes?.bold) {
+            content = <strong key={segIndex}>{content}</strong>;
+          } else if (seg.attributes?.italic) {
+            content = <em key={segIndex}>{content}</em>;
+          }
+          return <React.Fragment key={segIndex}>{content}</React.Fragment>;
+        })}
+      </div>
+    ));
+  };
+
   return (
     <div className="App">
       <div
@@ -103,30 +81,8 @@ function App() {
         style={{ height: '100%', overflowY: 'scroll' }}
         onScroll={handleScroll}
       >
-        {/* Render original script lines */}
-        {script.map((lineObj, index) => (
-          <div
-            key={index}
-            className="script-line"
-            style={{ textAlign: lineObj.alignment }}
-          >
-            {lineObj.dialogue
-              ? parseFormattedText(lineObj.text)
-              : <em>{parseFormattedText(lineObj.text)}</em>}
-          </div>
-        ))}
-        {/* Duplicate script lines for seamless scrolling */}
-        {script.map((lineObj, index) => (
-          <div
-            key={`repeat-${index}`}
-            className="script-line"
-            style={{ textAlign: lineObj.alignment }}
-          >
-            {lineObj.dialogue
-              ? parseFormattedText(lineObj.text)
-              : <em>{parseFormattedText(lineObj.text)}</em>}
-          </div>
-        ))}
+        {renderScript(script)}
+        {renderScript(script)}
       </div>
     </div>
   );
